@@ -1,0 +1,11 @@
+/home/tiago/projetos/dotNET/xadrez-console-csharp/bin/Debug/netcoreapp2.2/xadrez-console-csharp.deps.json
+/home/tiago/projetos/dotNET/xadrez-console-csharp/bin/Debug/netcoreapp2.2/xadrez-console-csharp.runtimeconfig.json
+/home/tiago/projetos/dotNET/xadrez-console-csharp/bin/Debug/netcoreapp2.2/xadrez-console-csharp.runtimeconfig.dev.json
+/home/tiago/projetos/dotNET/xadrez-console-csharp/bin/Debug/netcoreapp2.2/xadrez-console-csharp.dll
+/home/tiago/projetos/dotNET/xadrez-console-csharp/bin/Debug/netcoreapp2.2/xadrez-console-csharp.pdb
+/home/tiago/projetos/dotNET/xadrez-console-csharp/obj/Debug/netcoreapp2.2/xadrez-console-csharp.csprojAssemblyReference.cache
+/home/tiago/projetos/dotNET/xadrez-console-csharp/obj/Debug/netcoreapp2.2/xadrez-console-csharp.csproj.CoreCompileInputs.cache
+/home/tiago/projetos/dotNET/xadrez-console-csharp/obj/Debug/netcoreapp2.2/xadrez-console-csharp.AssemblyInfoInputs.cache
+/home/tiago/projetos/dotNET/xadrez-console-csharp/obj/Debug/netcoreapp2.2/xadrez-console-csharp.AssemblyInfo.cs
+/home/tiago/projetos/dotNET/xadrez-console-csharp/obj/Debug/netcoreapp2.2/xadrez-console-csharp.dll
+/home/tiago/projetos/dotNET/xadrez-console-csharp/obj/Debug/netcoreapp2.2/xadrez-console-csharp.pdb
