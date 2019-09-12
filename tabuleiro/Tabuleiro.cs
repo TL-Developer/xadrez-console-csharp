@@ -14,9 +14,15 @@ namespace tabuleiro
         this.pecas = new Peca[linhas, colunas];
       }
 
-      public Peca peca(int linha, int coluna)
+      public Peca ObterPeca(int linha, int coluna)
       {
         return this.pecas[linha, coluna];
+      }
+
+      public void ColocarPeca(Peca peca, Posicao posicao)
+      {
+        this.pecas[posicao.linha, posicao.coluna] = peca;
+        peca.posicao = posicao;
       }
     }
 }
