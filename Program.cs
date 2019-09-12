@@ -10,6 +10,8 @@ namespace xadrez_console_csharp
 
             Tabuleiro tabuleiro = new Tabuleiro(8, 8);
 
+            Tela.ImprimirTabuleiro(tabuleiro);
+
         }
     }
 }
