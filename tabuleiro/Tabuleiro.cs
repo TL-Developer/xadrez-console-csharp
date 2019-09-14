@@ -26,11 +26,12 @@ namespace tabuleiro
 
       public void ColocarPeca(Peca peca, Posicao posicao)
       {
+        if (ExistePeca(posicao)) throw new TabuleiroException("Já existe uma peça nessa posição");
         this.pecas[posicao.linha, posicao.coluna] = peca;
         peca.posicao = posicao;
       }
 
-      public bool ExistePecao(Posicao posicao)
+      public bool ExistePeca(Posicao posicao)
       {
         ValidaPosicao(posicao);
         return ObterPeca(posicao) != null;
