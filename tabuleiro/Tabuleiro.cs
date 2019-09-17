@@ -37,6 +37,21 @@ namespace tabuleiro
         return ObterPeca(posicao) != null;
       }
 
+      public Peca RetirarPeca(Posicao posicao)
+      {
+        if (ObterPeca(posicao) == null)
+        {
+          return null;
+        }
+
+        Peca aux = ObterPeca(posicao);
+        aux.posicao = null;
+
+        pecas[posicao.linha, posicao.coluna] = null;
+
+        return aux;
+      }
+
       public bool PosicaoValida(Posicao posicao)
       {
         if (posicao.linha < 0 || posicao.linha >= this.linhas || posicao.coluna < 0 || posicao.coluna >= this.colunas) {
