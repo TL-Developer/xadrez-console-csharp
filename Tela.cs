@@ -1,6 +1,7 @@
 using System;
 using tabuleiro;
 using tabuleiro.Enums;
+using xadrez;
 
 namespace xadrez_console_csharp
 {
@@ -17,17 +18,26 @@ namespace xadrez_console_csharp
           {
             if (tab.ObterPeca(i, j) == null)
             {
-              System.Console.Write("- ");
+              System.Console.Write("-  ");
             }
             else
             {
               ImprimirPeca(tab.ObterPeca(i, j));
-              System.Console.Write(" ");
+              System.Console.Write("  ");
             }
           }
           System.Console.WriteLine();
         }
-        System.Console.WriteLine("  a b c d e f g h");
+        System.Console.WriteLine("  a  b  c  d  e  f  g  h");
+      }
+
+      public static PosicaoXadrez LerPosicaoXadrez()
+      {
+        string s = Console.ReadLine();
+        char coluna = s[0];
+        int linha = int.Parse(s[1] + "");
+
+        return new PosicaoXadrez(coluna, linha);
       }
 
       public static void ImprimirPeca(Peca peca)
@@ -44,6 +54,5 @@ namespace xadrez_console_csharp
           Console.ForegroundColor = aux;
         }
       }
-
     }
 }
