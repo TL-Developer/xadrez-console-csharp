@@ -31,7 +31,7 @@ namespace xadrez
         posicao.DefinirValores(posicao.linha - 1, posicao.coluna);
         while (tabuleiro.PosicaoValida(posicao) && PodeMover(posicao))
         {
-          mat[posicao.linhas, posicao.coluna] = true;
+          mat[posicao.linha, posicao.coluna] = true;
 
           if (tabuleiro.ObterPeca(posicao) != null && tabuleiro.ObterPeca(posicao).cor != this.cor) {
             break;
@@ -44,7 +44,7 @@ namespace xadrez
         posicao.DefinirValores(posicao.linha, posicao.coluna + 1);
         while (tabuleiro.PosicaoValida(posicao) && PodeMover(posicao))
         {
-          mat[posicao.linhas, posicao.coluna] = true;
+          mat[posicao.linha, posicao.coluna] = true;
 
           if (tabuleiro.ObterPeca(posicao) != null && tabuleiro.ObterPeca(posicao).cor != this.cor)
           {
@@ -58,7 +58,7 @@ namespace xadrez
         posicao.DefinirValores(posicao.linha, posicao.coluna - 1);
         while (tabuleiro.PosicaoValida(posicao) && PodeMover(posicao))
         {
-          mat[posicao.linhas, posicao.coluna] = true;
+          mat[posicao.linha, posicao.coluna] = true;
 
           if (tabuleiro.ObterPeca(posicao) != null && tabuleiro.ObterPeca(posicao).cor != this.cor)
           {
